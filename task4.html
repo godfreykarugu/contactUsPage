@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            background: #000000;
+          max-height: 100vh;
+          padding-bottom: 30px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        h2 {
+            /* text-align: center; */
+            color: #fff;
+          
+        }
+
+        .col-l, .col-r{
+            flex-basis: 45%;
+            padding: 50px 25px;
+            max-height: 500px;
+        }
+
+        .col-l {
+            filter: grayscale(100%);
+
+        }
+
+        
+        .col-l:hover{
+            filter: grayscale(0);
+
+        }
+
+
+        input,textarea {
+            border-radius: 10px;
+            padding: 20px 30px;
+            background: rgb(20, 20, 20);
+            color: #fff;
+            margin: 5px 0 0 10px ;
+                
+            outline: none;
+
+              border: none;
+           /* border-bottom: 1px solid #ccc;
+            border-radius: 3px;
+            transition: border-bottom 0.5s ease;  */
+           
+        
+        }
+    
+
+        ::placeholder{
+            color: #fff;
+             font-size: 18px; 
+        }
+        button {
+    width: 200px;
+    height: 50px;
+    /* text-align: center; */
+    margin: 10px 20px;
+    border: 1px solid #f1f1f1;
+    background: transparent;
+    color: #fff;
+    border-radius: 25px;
+    position: relative;
+     overflow: hidden;
+}
+
+span{
+    width: 0;
+    height: 100%;
+    background: #009688;
+    position: absolute;
+   border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+} 
+
+        form {
+            border: 1px solid #ffffff;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+.container-1{
+    margin-top: 40px;
+    padding-top: 20px;
+    background: rgb(20, 20, 20);
+    height: 300px;
+    color: #ffffff;
+}
+.col-3 {
+    margin: 20px 10px;
+    display: flex;
+    background: #232323;
+    transition: transform 0.5s;
+
+    flex-basis: 30%;
+    border-radius: 20px;
+  
+}
+
+.col-3:hover {
+    transform: translateY(-10px);
+    border: 1px solid #222121cb;
+    background: transparent;
+    border-radius: 20px;
+
+    
+}
+
+.col-3 img {
+    width: 35px;
+    height: 30px;
+    padding: 20px 25px;
+   
+}
+
+.col-3 .content {
+    margin-left: 15px;
+}
+
+    </style>
+</head>
+<body>
+        <div class="container-1">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/person.png" alt="">
+                    
+                       <div class="content">
+                        <h2>Call us</h2>
+                        <h2>0721 574328</h2>
+                        <p>0721 574328</p>
+                       </div>
+                   
+                </div>
+
+                <div class="col-3">
+                    <img src="images/email.png" alt="">
+                    <div class="content">
+                        <h2>Our email</h2>
+                        <p>apensoft@apen.com</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <img src="images/password.png" alt="">
+                    <div class="content">
+                        <h2>Our Address</h2>
+                        <p>Ngara Rd,</p>
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-l">
+                    <h2>Where we are</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7977.656810805582!2d36.81983793413483!3d-1.2763476686207267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sapen%20softwares!5e0!3m2!1sen!2ske!4v1709958010825!5m2!1sen!2ske" width="600" height="400" style="border:1px solid #fff; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-r">
+                    <h2>send us a message</h2>
+                    <form action="">
+                        <input type="text" placeholder="First Name">
+                        <input type="email" placeholder="email"> <br><br>
+                        <input type="number" placeholder="number">
+                        <input type="text" placeholder="subject"> <br><br>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="about us" style="width: 400px;"></textarea> <br><br>
+<!--                        <input type="submit" value="submit">-->
+                        <button><span></span>submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
